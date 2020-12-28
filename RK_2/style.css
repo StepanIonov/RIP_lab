@@ -1,0 +1,10 @@
+.languages_table{
+    border: 3px solid black;
+}
+.ide_list li:nth-child(odd){
+    background-color: yellow;
+}
+.ide_list li:nth-child(even){
+    background-color: green;
+    color: white;
+}
