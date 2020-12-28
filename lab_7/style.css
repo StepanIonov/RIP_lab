@@ -1,0 +1,27 @@
+section.main{
+    height: 500px;
+    color: #33754c;
+    font-size: 14pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.label-progr{
+    font-style: italic;
+    color: #922c2c;
+}
+
+th{
+    text-align: center;
+}
+
+.style_rows tr:nth-child(odd){ 
+    background-color: #c2f1c0; 
+} 
+
+.style_rows tr:nth-child(even){
+    background-color: white; 
+}
+
+.label-form-style{
+    font-weight: bold;
+}
