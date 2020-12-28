@@ -1,0 +1,29 @@
+{% load static %}
+<table width=750 border="1">
+    <thead>
+        <tr>
+            <th width=100>Название блюда</th>
+            <th width=50>Цена за порцию, руб.</th>
+            <th width=200>Состав</th>
+            <th width=400>Изображение</th>
+            <th width=50></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ dish.name }}</td>
+            <td>{{ description.price }}</td>
+            <td>{{ description.structure }}</td>
+            {% if dish.name == "Суп с лапшой" %}
+                <td><img src="{% static 'dishes/images/Суп с лапшой.jpg' %}" width=400></td>
+            {% endif %}
+            {% if dish.name == "Борщ" %}
+                <td><img src="{% static 'dishes/images/Борщ.jpg' %}" width=400></td>
+            {% endif %}
+            {% if dish.name == "Мясо по-французски" %}
+                <td><img src="{% static 'dishes/images/Мясо по-французски.jpg' %}" width=400></td>
+            {% endif %}
+            <td><a href="{% url 'index' %}">Назад</a></td>
+        </tr>
+    </tbody>
+</table>
