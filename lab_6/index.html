@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Опрос для посетителя кафе "Восток"</title>
+    </head>
+    <body>
+        <p><font size=4>Здравствуйте! Просим пройти Вас пройти короткий опрос, который поможет
+            нам понять, какие блюда Вам нравятся. </font>
+        </p>
+        <form action=#>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <p><label for="name"><b>Имя: </b></label><input type="text" name="name"></p>
+                <p><label for="gender"><b>Выберите Ваш пол: </b></label>
+                    <select name="gender" multiple size=2>
+                        <option value="g1">Мужской</option>
+                        <option value="g2">Женский</option></p>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Предпочтения</legend>
+                <p><label for="favourite_food"><b>Какое блюдо предпочитаете? </b></label>
+                    <select name="favourite_food">
+                        <optgroup label="Первое блюдо">
+                            <option value="f1">Суп с лапшой</option>
+                            <option value="f2">Борщ</option>
+                        </optgroup>
+                        <optgroup label="Второе блюдо">
+                            <option value="s1">Котлета куриная</option>
+                            <option value="s2">Мясо по-французски</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p><label for="Times"><b>В какое время суток Вы предпочитаете посещать наше кафе? </b></label>
+                    <input type="text" name="Times" list="datalist1">
+                    <datalist id="datalist1">
+                        <option value="Утром">Утром</option>
+                        <option value="Днём">Днём</option>
+                        <option value="Вечером">Вечером</option>
+                    </datalist></p>
+            </fieldset>
+            <fieldset>
+                <legend>Оценка качества обслуживания</legend>
+                <p><b>Отметьте верные для Вас утверждения:</b><br>
+                    <input type="checkbox" name="qual_opt1" value="q1">Приятный интерьер<br>
+                    <input type="checkbox" name="qual_opt2" value="q2">Доброжелательный персонал<br>
+                    <input type="checkbox" name="qual_opt3" value="q3">Быстрое обслуживание<br>
+                    <input type="checkbox" name="qual_opt4" value="q4">Приятные цены<br>
+                    <input type="checkbox" name="qual_opt5" value="q5">Наличие всех блюд, представленных в меню</p>
+                <p><label for="attitude"><b>Ваше отношение к кафе в целом:<br></b></label>
+                    <input type="radio" name="attitude" value="r1">Положительное<br>
+                    <input type="radio" name="attitude" value="r2">Нейтральное<br>
+                    <input type="radio" name="attitude" value="r3">Отрицательное</p>
+                <p><label for="big_opinion"><b>Напишите Ваше мнение о кафе:<br></b></label>
+                    <textarea rows="4" cols="60" maxlength="500" name="big_opinion"></textarea></p>
+            </fieldset>
+            <p><input type="submit"><button type="reset"><img src="Images/button_reset.jpg"
+                width=30 style="vertical-align: middle"> Сбросить данные формы </button></p>
+        </form>
+    </body>
+</html>
