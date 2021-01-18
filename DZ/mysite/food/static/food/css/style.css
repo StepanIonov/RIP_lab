@@ -1,0 +1,26 @@
+nav.navstyle {
+    background-color: rgb(106, 173, 80);
+}
+
+section.main{
+    height: 500px;
+    color: #2e4d86;
+    font-size: 12pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th{
+    text-align: center;
+}
+
+.style_rows tr:nth-child(odd){ 
+    background-color: #d1fcb9; 
+} 
+
+.style_rows tr:nth-child(even){
+    background-color: white;
+}
+
+.style_rows tr:hover {
+    background-color: white;
+}
